@@ -1,0 +1,8 @@
+# Uploaded files must never be executed as PHP, even if someone sneaks one in.
+Options -Indexes
+<FilesMatch "\.(php|phtml|phar)$">
+  Require all denied
+</FilesMatch>
+<IfModule mod_php.c>
+  php_flag engine off
+</IfModule>

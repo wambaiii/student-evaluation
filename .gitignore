@@ -1,0 +1,5 @@
+.env
+public/uploads/avatars/*
+!public/uploads/avatars/.gitkeep
+*.log
+.DS_Store
